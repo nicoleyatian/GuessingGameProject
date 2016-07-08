@@ -3,18 +3,24 @@
 <link type="text/css" rel="stylesheet" href="main.css">
 </head>
 <body>
+<script src="jquery-3.0.0.min.js"></script>
+<script src="guessingGame.js"></script>
+<!-- <script src="1.js"></script> -->
+
 <div class="main">
-	<h1>Guessing Game</h1>
+	<h1>Nicole's Guessing Game</h1>
 	<h2>Guess The Number</h2>
-	<div class="guess">
-		<input type="text" id="submit-number" placeholder="Input Number 1-100">
-		<input type="submit" id="submit-number" value="Submit Your Guess">
-		<p>5 More Chances</p>
+	<div class="submit-guess">
+		<input type="text" id="guess" placeholder="Input Number 1-100">
+		<p id="message"></p>
+		<button id="guess-button" onclick="playersGuessSubmission()">Submit Your Guess</button>
+		<p class="times">5 More Chances</p>
 	</div>
 	<div class="options">
-		<button type="button">Try Again</button>
-		<button type="button">Hint</botton>
+		<button type="button" onclick="playAgain()">Play Again</button>
+		<button type="button" onclick='provideHint()'>Hint</botton>
 	</div>
-	<div class="hint"></div>
+	<div id='hint'></div>
 </div>
 </body>
+

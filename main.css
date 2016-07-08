@@ -4,50 +4,60 @@ html, body, h1, h2, h3, p, ol, ul, li, a {
 	margin: 0;
 }
 .main {
-	background: url("background.jpg") top center no-repeat;
+	background: url("background.jpg") top center repeat;
 	overflow: hidden;
 }
 
 h1 {
 	margin: 40px auto 40px auto;
 	text-align: center;
-	font: bold 52px Helvetica, Arial, Sans-Serif;
+	font: bold 60px Tahoma, Geneva, sans-serif;
 	text-shadow: 4px 4px 4px #FFFFFF;
-	color: #FF005A;
+	color: #ff6666;
 
 }
 h2 {
 	margin: 0 auto 15px auto;
 	text-align: center;
-	font: bold 32px Helvetica, Arial, Sans-Serif;
-	color: #444444;
-	text-shadow: 0px 2px 2px #FFFFFF;
+	font: bold 38px Tahoma, Geneva, sans-serif;
+	color: #ffc3a0;
+	text-shadow: 0px 2px 2px #332720;
 }
-.guess {
+.submit-guess {
 	text-align:center;
 }
 input {
-	margin: 15px auto 15px auto;
+	margin: 20px auto 20px auto;
 	display: block;
 }
 input[type=text] {
-	height: 40px;
+	height: 44px;
+	font-size:14px;
 }
-input[type=submit] {
-	background-color: #65c5f0;
-	width:180px;
-	height: 48px;
+.submit-guess button {
+	background-color: #fa8072;
+	width:220px;
+	height: 54px;
     border: none;
     color: white;
-    padding: 15px, 15px;
+    padding: 12px, 12px;
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
     border-radius: 8px;
 }
-.guess p {
-	font: bold 18px Helvetica, Arial, Sans-Serif;
-	color: #FF005A;
+.submit-guess p {
+	font: bold 24px Helvetica, Arial, Sans-Serif;
+	color: #800000;
 	text-shadow: 0px 2px 2px #FFFFFF;
+	margin: 15px;
+}
+#img1 {
+	width: 30%;
+	height: 30%;
+}
+#img2 {
+	width: 10%;
+	height: 10%;
 }
 .options {
 	margin: 20px auto 20px auto;
@@ -55,10 +65,23 @@ input[type=submit] {
 }
 
 .options button {
-	font-size: 14px;
+	font-size: 18px;
 	padding:10px,10px;
 	margin-right: 10px;
 	margin-left: 10px;
 	border-radius: 8px;
-	background-color: #FFFFFF;
+	background-color: #f0f8ff;
+}
+#hint p{
+	border-style: dotted;
+	border-width: 4px;
+	border-color: #ff6666;
+	border-radius: 8px;
+	background-color: #d3ffce;
+	text-align: center;
+	margin:10px auto;
+	padding:0px 15px;
+	width: fit-content;
+	font-size: 20px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
 }
